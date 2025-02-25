@@ -1,0 +1,19 @@
+
+<form [formGroup]="form">
+    
+    <div>
+        Name:<input type="text" formControlName="name">
+    </div>
+    <div>
+        Address:<input type="text" formControlName="address">
+    </div>
+
+    <div>
+        <button type="button" (click)="process()">Complete</button>
+    </div>
+    <ul>
+        <li>
+            Invalid: {{form.invalid}}
+        </li>
+    </ul>
+</form>

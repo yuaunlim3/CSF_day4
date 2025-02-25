@@ -1,0 +1,14 @@
+<!--
+<app-form></app-form>
+-->
+
+<div>
+  <button type="button" (click)="fetchDogs()">Get Dogs</button>
+</div>
+
+<div>
+  @for (dogs of dogImages; track $index) {
+    <img [src]="dogs" alt="">
+  }
+</div>
+

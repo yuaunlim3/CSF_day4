@@ -1,0 +1,10 @@
+@if (gifs.length == 0) {
+    Search again
+}@else {
+    @for (gif of gifs; track $index) {
+        <img [src]="gif" alt="Gif">
+        <div>
+            <span>{{gif}}</span>
+        </div>
+    }
+}
